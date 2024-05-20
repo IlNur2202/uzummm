@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stayle.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+
+</head>
+<body>
+
+
+ 
+
+  <div>
+
+  </div>
+    
+  <header style="background-color: rgb(233, 233, 233);">
+
+    
+
+    <nav id="x1">
+        <a id="q1" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADuElEQVR4nO2ZWYiOURjHfzRkmbHPZOJCWYZCiNwoW7JEGtkaV24VuZG9xnZBcodsxYWILJESLiQiDLIklEhqLFnGvoxPR/+3TtN8531f3znffCO/euvr/f7vc/bnOec58J9G6QBUAbuAq8BL4Luel3q3E5gLlFCAVAB7gM9AJuHzCdgN9KUAaAdsBn6ocr/U6yuB0Wpgez0VercKuCZtRqO1CWjTVI0wPXlHlakH9gO9U3zfBzhgNegyUE6eGao5byrwABiWg63hwEPZegYMJo8jETXiDNDZg80uwFmrMeX5WBN3rEYUebTdCjhnTbOga2azNZ18jERjI/NIZawhEBXyTvU5rok4RsgBfAS6hyhgj3rKeKfQHFRZ20JE7E/qqSQutgxYB9xUz5rnBrAWKE3oUH7pu2I8UqUeMsEujplAnSOivwdmJLBzXfo5eGSXjJqIHdeIKMAdUySPIvsY4LgVQCtjbK2WdofHdvwZiYwq5ppO0UgsceiWSvMO6ObQjZXuCh55JaP9HJp11kjEcSKBi+0nzQs88k1GXVvvWwlGrWFvGweQjRJpvuKRLzLqirYfpEniZaJKmqno2kVkdDTwRq2MugJUXYqGdLA8WDZ6SPMcj9yX0YEOzU1pjHeKY5y0NQ7NEGnu4pGTMjrboVkrzfEU9qodmnnSHMUjG2R0vUNTqqmSkYvNxnJp3gJdHbqNCRqbmtkyarbZLmYo2GXkYsdqzRRrOkUjYTTTY2xdlDZOl4oyFf5V3sRFpYJdti3K2wSV66Sdtnk64pkbqsiUBNpuCnY1cst12jtVx0yniFkqy4yKd6LIvZfwHEmw1v6a/pbvj5teudBRAdhsPnuFKqRGjTGuMRQLVcb5gGWwwEoOhKAIeKwyzBkoGMWWRzJna9/MtbYlJqsSlC0q7HDAqbuCPFBuLcZBHu1OsA5cJo7kha0BRsUs7qD5rMboaWVVRnmwV6lGvA6U+HNSbZ3yWuZgp7WVxF5AE9AWeKIKzM/BzhLZuOc5l/xX+a5anfrSUmq584k0IS2AS6qISXCnZZ++Ndv7Jmeors9+AiNTfDfJuktMc9MVlOiYez/hvYbJojzVN4soIFoDtxMchyO2W+eNXDxeEIZoitXHZFImKf6Y0+YACpQ16uknWbYZZUqBGs1iCpgi4IKVxjFeLcJModP671SD/wqSnlbSe2UjR+XaUFdqIZimdWDWy2Rgqn4bFz2eZka1RuCNUkDm9zKaIS2AQ1Y+q+GaaVaU6Mbpsu9LTf5VfgNttDSN+ivn8AAAAABJRU5ErkJggg=="></a>
+        <a id="via" href="">Город: Ташкент</a>
+        <a id="via" href="">Пункты выдачи</a>
+        <a id="via" href="">Доставим ваш заказ бесплатно--всего за 1 день!</a>
+        <a id="via" href="">Вопрос-ответ</a>
+        <a id="via" href="">Мои заказы</a>
+        <a id="via" style="width: 27px;margin-top: 10px;margin-left: 10px;" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACjUlEQVR4nO2YzWoTURTHTyrUVevXQhf6Am6kRRTq3MzGhbpxpvE1VFC04Ad0WdRW+whuSm0Upcz4FlKQrEbiPedm4kpdVLtIFj1ypzGY2jCZZDJ3QnPgD2GYTH6/e+7HEIBxjWtcAxczH0HEWSK6K0mVkWgLkZRE2tHRn/U1SWoDEe9IKWf0d8B0SSnPENHCHqviJJGo6pLU0pcwPJc5eBAE04jqJZJqJgU/IE1EtaKfmQk8It6SpL6lAN7ZEf1MrJWGBs7MBUm0KJF204bHTpFVZp5IFT4IgqMS1eYwwfHfoPpQqVQmU4HXoxHtHlnBU1tiPZVOSFSvMoentsTyYPCydsMYPLXWhKxd7wu+Wq0e2zuADAsghVLK44kF9N5sGh7boReJ4JVSJyXSL/Pg6m8XfodheCrJ6D81DY37JYge94jPhaLjo+36nKcUXU9qtlh8u+RfNA1rd4lwN2djBYo3/YemQe1uXZj378cLuN7b3Ao4Xjl+Crne59wKuP5WDwL+zxwLfI8XcLymaVC7Wxy/cSgEfoz2FHJHfBEXHa9sGtTuno1eptCD3HbA8e+N9KtEsfRxJlZgrwt+dWRf5nSxgCcsgHMVCx5Br8UWnGAB28ahRTvbmqlngVYXlnM0+s8SwUcCl2CaLVDG4QUQz8FUYoFIwoKrLGDX8Ohf6wu+LSFgxSD884HgIwGAAgt4bUBgjQHS+ZOXz8MkC3if4ci/07+ZCvy+TixmsCZWUxv5A0UElFhAfQjgdS7C/NDAOyTmYKp1TjRSAG/oxdr3VjmQyGU4zRYssAVf+wAPWcAS23A2c/D/RAAm+ApcYAtuswVv2IJP0QEkYKcViq5ZsB7do+8d5jwf17gOUf0BgKZqqdr/knMAAAAASUVORK5CYII="></a>
+        <a id="via" href="">Русский</a>
+    </nav></header>
+    <nav id="x2">
+
+
+      <img id="mf5" src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/bc/9e/d3/bc9ed3a2-4196-75e8-f5bc-8b06f47e18ce/AppIcon-0-0-1x_U007epad-0-85-220.png/230x0w.webp" alt="">     
+      <a id="z11" href=""><h3>UZUM MARKET</h3></a>
+      
+     <div id="bbb">
+         <input placeholder="Искать товары и категории" id="xc1" type="text">
+         <a href=""><img id="vvz" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABaUlEQVR4nO2Wz0pCQRjFf2i6ydop9ArZO1T7FhrlK0TSH+spxNcw61GCaJMFJZn71rqolfHBufBtwjtzLxLkgYELM+ecud98cxhY4Q+hDLSAW+ANmGnY90BztiZXHAIfwHzBGAPNPAwLQM8JPwEXwDawrlEHLoGhW9cVNxo9CX0BJwvEbO5UaxPz6PLOJbQbwNtz5o1Q07I7U/vTULTFfQdKIcSWO9OYsyoCz9I4CiHeiXROPDrSuAkhjUSy7o1FXRp2z1NjKlIlg/GGNKbLNt6MMR7lUOod19mpMRDJEikW19Lox1ynYYbr9CKN49AAGYtoMRiKM3EnwFooueki02IwLfaBb3EPiETXmbdVwt9Q1J8mpp9ANda44MznisGOwqGiYd175c40MU3W18iAhq7FoofAROWtuqzObF5S4Fv2vioYZtpQX93rG6mWp3koqu5lYpvd4r+Y11zZH5ZpnJg/AvfLNl4Bww/dcoIlpDH7/gAAAABJRU5ErkJggg=="></a>
+         
+         
+          </div>
+     
+         
+            <a href=""><img style="margin-left: 15px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA4UlEQVR4nO2SPQ4BQQCFPxqVhoRi6VDsAdxCxVWo9w5OIRsVEhGXoNiGVkdi6ShWJnkSETshRjT7kte8vJ/dmYEMjlADQuAkjoGmy/IDkDzRaJ6LgVCFExUaTqWNXAycVPb4tXVpRxcDscpqvxoYq2yqEcOZNHN8X6MF7FMuuYEjeLrQWAxdlmdIRR5oAwGwBCLgLEbSAnmM920UgAGwe/Fy0mi8fWWtqALrh+AWGAIdwAeKoi9tKM/dvwIqtoGFjBugC+Te+GPj6SljsnOb+SpTic9RVvZiMyWO+L+BDDzjBhltb91A/g4cAAAAAElFTkSuQmCC"></a>
+            <a style="margin-left: 20px;" href="">войти </a>
+         
+            <a href=""><img style="width: 25px;margin-left: 20px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC0UlEQVR4nO2YX2iNcRjHPzubMTv5Uy5OLhRFMW6QImUouVK4cEMsF7PCMg1LanLBHS2lFrnjhraapPyJK4mSI7Yp/3bjkhgblulXz1tPT2fn/XPec95D76fees/e3/N9vr/ffv8hJSUlJaVCzAVagH5gCBgFxoB3wDVgO1AbQMeV2QFcl9gx0XKafcA+YE6cxhuALuALMOnzDAJri2itkzJ+Op+BE8CMUs3PB54GSKif31LhGqWTAU7KtzBaT8RDZPMjRvAFcBhYBjRKC7n3o8AHU7ZHaV00394DR4ClouG0moB2IG/KjkSpRINp+XGgVVqyWEyPSd4NnDZ/u+DTNTLAAcmp/xOhulOXMb8hRGxnkS7REUKn2VTiWJjZRg9Y1/JhuVzAfG8EnTYzsAPNTi2mzxfrNlMxE3ipdPLSxcJSa8bE3iBBfSrADdioLJYpc1Deo9Ku/NwMEjCsAtwMkzRNyo9b7Hz5pgKyJE9W+XHefBlVAbNIntlhKzCkAraQPFuVn9dBAnrDDpoy06/8XAoSsFkF/AHWkByrxIPnxy1uvtTI/O8F3Tcbs0qRAR4oH8/DBG8yq6jbrFWaTuMh9Hi8qoJ/VbgrrQR+qvxXoog0yqj3RNzpKUf5ycl228v7SrYmkVgB/FBiz8q8uGUlh5fP5V5equhOYEKJ3gLqiJ860fbyTMjZORZazYAaAKbHJQ5MA26YHIeImTMmgVtg6mPQrTeL1aTkKgu2ErdLvDmoL2D+PGWm2yS8E/Gw4rrgQKXNe5wyie+GnOpc2XtJmfc4bgw8DLj9dmUemdizJESb2Wy5OXyez4XBY2P+HAlz0FQiP8WKnTMHfRcT+1QZld3m2tBtOxap7wuAN2aR2k+VsUs2fZ7Jj8ASYCHw1pjfQ5WyzdymfZLH+z0uZaqaZuBrgZu571Vyxg7EenM96W4TNvKPsVoG7rC8p6SkpPyH/AXXK0swH4PsJQAAAABJRU5ErkJggg=="></a>
+            <a style="margin-left: 15px;" href="">Избранное</a>
+          
+            <a href=""><img style="margin-left: 20px;width: 25px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABUUlEQVR4nO2WTU4CQRSEa6dcwB/WegG9gG7FhBPgBXAtwaUx6AGQA6AHQNdqPADRPdE90Z24kNWYl1RvjKNTPa+JJFTyEtIvX70CprsHWGhOtQ/gDsAHgAk/12Y1/BRAllMns/jmGYApgCMAVVaLa9bbSxngnkNs4He12LtNGWDCIes/9NbYe08ZIGPF9iV9/vKwqWVekpYdh4daUgKsEho7/AVjrq0oATYJjRwCjLi2oQTYJjR0CDDk2pYSYJeQ7Xuvs2NHgeqEBg4BBvQyz8I6INR3CNCnV0OBDgl1HQJ06dVUoGNCHYcAHXq1Feg8BspRm15nCtSL+dly1KTXhQJdxTw4OWrQ61KBbmK2zh9b+lqBHgjZgVRW4VAzz8J6ImRHclmFY/1RgV4I2aVUVuFie1agN0J2LZdVuNpfFWia4IXEPAupkmB4KHvTWuh/6QtrQbyao1wCwgAAAABJRU5ErkJggg=="></a>
+            <a style="margin-left: 15px;" href="">Корзина</a>
+     
+     
+           </button>
+     
+         </nav>
+         <div id="display">
+          <img style="width: 20px;height: 20px;" src="https://static.uzum.uz/nasiya/union.png" alt="">
+          <a class="gego"  href="">Халяльная расрочка</a>
+          <a class="gego"  href="">Элекртроника</a>
+          <a class="gego"  href="">Бытовая техника</a>
+          <a class="gego"  href="">Одежда</a>
+          <a class="gego"  href="">Обувь</a>
+          <a class="gego"  href="">Аксесуары</a>
+          <a class="gego"  href="">Красота</a>
+          <a class="gego"  href="">Здоровье</a>
+
+
+          <a class="gego"  href="">Товары для дома</a>
+          <a class="gego"  href="">Строительство и ремонт</a>
+          <a class="gego"  href="">Еще</a>
+        </div>
+
+
+
+        <div>
+        <div id="m1">
+          <div>
+            <div style="width: 65%;height: 400px;margin-left: 370px;border-radius: 25px;" class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="https://i.ytimg.com/vi/M8ycFSx6yJs/maxresdefault.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle"></a> 
+                <a href="#slide2" class="btn btn-circle"></a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="https://proactions.ru/media/actions/2019/11/01/noo2rvff.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle"></a> 
+                <a href="#slide3" class="btn btn-circle"></a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="https://i.ytimg.com/vi/sm4thWJ6dns/maxresdefault.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle"></a> 
+                <a href="#slide4" class="btn btn-circle"></a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="https://i.ytimg.com/vi/0KTNriX6WhY/maxresdefault.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle"></a> 
+                <a href="#slide1" class="btn btn-circle"></a>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+          </div>
+         
+           
+        
+        
+        
+        
+        
+        
+        
+          <div id="mag">
+            <a id="mk" href="">Искать везде</a>
+            <a id="mk" href="">Макияж</a>
+            <a id="mk" href="">Уход за лицом</a>
+            <a id="mk" href="">Парфюмерия</a>
+            <a id="mk" href="">Уход за телом</a>
+            <a id="mk" href="">Уход за волосами</a>
+            <a id="mk" href="">Парфюмерная вода</a>
+            <a id="mk" href="">Маски</a>
+            <a id="mk" href="">Губы</a>
+            <a id="mk" href="">Глаза</a>
+            <a id="mk" href="">Лицо</a>
+          </div>
+          <div style="width: 400px;background-color: 1000px; margin-top: 30px;margin-left: 560px;">
+            <div style="display: flex;">
+              <h1 style="font-size: 20px;">Сначала показывать:</h1>
+              <a style="margin-top: 5px;" href="">Популярныйе v</a>
+            </div>
+          </div>
+          
+          <div  id="bojojo">
+            
+            <div id="osnova">
+              <div style="display: grid;">
+                <h2 style="margin-left: 300px;font-size: 20px;">Все категории</h2>
+                
+                <button style="margin-left: 300px;"  class="btn glass">Красота и уход</button>
+                <button style="margin-left: 300px;"  class="btn glass">Ароматерапия</button>
+                <button style="margin-left: 300px;"  class="btn glass">Для мужчин</button>
+                <button style="margin-left: 300px;"  class="btn glass">Корейская косметика</button>
+                <button style="margin-left: 300px;"  class="btn glass">Личная гигиена</button>
+                <button style="margin-left: 300px;"  class="btn glass">Макияж</button>
+                <button style="margin-left: 300px;"  class="btn glass">Маникюр и педикюр</button>
+                <button style="margin-left: 300px;"  class="btn glass">Наборы</button>
+                <button style="margin-left: 300px;"  class="btn glass">Оборудование<br> и материалы для<br> тату-салона</button>
+                <button style="margin-left: 300px;"  class="btn glass">Парфюмерия</button>
+                <button style="margin-left: 300px;"  class="btn glass">Парфюмерия</button>
+                <button style="margin-left: 300px;"  class="btn glass">Профессиональная<br> косметика</button>
+                <button style="margin-left: 300px;"  class="btn glass">Уход за волосами</button>
+                <button style="margin-left: 300px;"  class="btn glass">Уход за лицом</button>
+                <button style="margin-left: 300px;"  class="btn glass">Уход за телом</button>
+                <h2 style="margin-left: 300px;font-size: 20px;">Цена</h2>
+
+                
+                
+              </div>
+              <div id="osnova2">
+                <div style="display: flex; justify-content: center;">
+                  <input style="width: 100px;height: 30px;background-color: rgb(212, 212, 212);margin-left: 290px;outline: none;" type="text">
+                <input style="width: 100px;height: 30px;background-color: rgb(212, 212, 212);margin-left: 30px;outline: none;" type="text">
+                </div>
+                
+              </div>
+            </div>
+            <div id="osnova2">
+
+            </div>
+            
+        <div style="margin-top: -1150px;">  
+            <div  id="glavniy">
+        
+            
+        
+              <div id="but">
+
+
+              <img id="kasmetika1" src="https://opt2b.ru/upload/iblock/7d9/ii2t695b6echupdsrdgh6y0t57x93zos.jpeg" alt=""><a href="heart"><img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABXUlEQVR4nO2UTyuEURTGf5qFxMZGJEmxkGGFKFZCsuUjsPEF7NU0+QLMhK2yUmzFR7CxYqNBNjb+Z8ro1DN143i9875jxVOnbu/znOfc995zD/wjAXqAAlACysAVsAX0Bpo+YFtcWdpN5UZiFngAKk68AUvAstae5h6Yidp51fwAGAGagaz+yL6/K2xdBAalMe1hUKTbK1AIzD2sBAVs7aFaZMMjSyKHI45wVfEdRuVx6ZGvIu2Xk6JFHi8eeSFyIEWBrDzOPXJHZC5Fgbw8rK2/YEykdVJnAvMu4FFNYHfhYk9FjoBMDeamPVbubpSwDbiR0F5mHDToTVjOLdD+U8Ik8KyEtRgFctJazkSsLQHTQdvmtUtv5+vBGJmnRiwGM6f46U4ywbGYZoGEmArm0z7QBDQGzfAEzJES48CdDE8UFX0zri7o13ypjuVrYIg6owM4Bc70qH4FrYo/hA9B9W0lCbw6NQAAAABJRU5ErkJggg=="></a>
+        
+              <p id="p21">Распродажа</p>
+              <a href="">Спрей термозащита Compliment, восстанавливающий , масло арганы, молочная сыворотка, 200 мл</a>
+                
+                <div style="display: flex;">
+                  <a href=""><img style="margin-top: 5px;width: 10px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a> 
+                   <p >5.0(41 оценка)</p>
+                </div>
+      
+                <p id="markem">5 475 сум/в месяц</p>
+                <p>34 000сум</p>
+                <del>120 000</del>
+                
+      
+                
+      
+              </div>
+      
+      
+      
+              <div id="but">
+      
+                <img id="kasmetika1" src="https://images.uzum.uz/cjadlnsjvf2nv3nn3c10/original.jpg" alt="">
+                
+                <a class="heart" href=""><img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABXUlEQVR4nO2UTyuEURTGf5qFxMZGJEmxkGGFKFZCsuUjsPEF7NU0+QLMhK2yUmzFR7CxYqNBNjb+Z8ro1DN143i9875jxVOnbu/znOfc995zD/wjAXqAAlACysAVsAX0Bpo+YFtcWdpN5UZiFngAKk68AUvAstae5h6Yidp51fwAGAGagaz+yL6/K2xdBAalMe1hUKTbK1AIzD2sBAVs7aFaZMMjSyKHI45wVfEdRuVx6ZGvIu2Xk6JFHi8eeSFyIEWBrDzOPXJHZC5Fgbw8rK2/YEykdVJnAvMu4FFNYHfhYk9FjoBMDeamPVbubpSwDbiR0F5mHDToTVjOLdD+U8Ik8KyEtRgFctJazkSsLQHTQdvmtUtv5+vBGJmnRiwGM6f46U4ywbGYZoGEmArm0z7QBDQGzfAEzJES48CdDE8UFX0zri7o13ypjuVrYIg6owM4Bc70qH4FrYo/hA9B9W0lCbw6NQAAAABJRU5ErkJggg=="></a>
+      
+                <p id="p21">Распродажа</p>
+      
+                <a href="">Крем для лица Collagen, отбеливающий с экстрактом <br> улитки и коллагеном, питание, 80 г</a>
+                <div style="display: flex;">
+                  <a href=""><img style="margin-top: 5px;width: 10px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a> 
+                  <p >5.0(41 оценка)</p>
+                </div>
+                
+                
+                <p id="markem">5 475 сум/в месяц</p>
+                <p>34 000сум</p>
+                <del>120 000</del>
+      
+              </div>
+      
+      
+      
+              <div id="but">
+
+
+                <img id="kasmetika1" src="https://avatars.mds.yandex.net/get-mpic/5252277/img_id6064002599689160536.jpeg/orig" alt=""><a class="heart" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABXUlEQVR4nO2UTyuEURTGf5qFxMZGJEmxkGGFKFZCsuUjsPEF7NU0+QLMhK2yUmzFR7CxYqNBNjb+Z8ro1DN143i9875jxVOnbu/znOfc995zD/wjAXqAAlACysAVsAX0Bpo+YFtcWdpN5UZiFngAKk68AUvAstae5h6Yidp51fwAGAGagaz+yL6/K2xdBAalMe1hUKTbK1AIzD2sBAVs7aFaZMMjSyKHI45wVfEdRuVx6ZGvIu2Xk6JFHi8eeSFyIEWBrDzOPXJHZC5Fgbw8rK2/YEykdVJnAvMu4FFNYHfhYk9FjoBMDeamPVbubpSwDbiR0F5mHDToTVjOLdD+U8Ik8KyEtRgFctJazkSsLQHTQdvmtUtv5+vBGJmnRiwGM6f46U4ywbGYZoGEmArm0z7QBDQGzfAEzJES48CdDE8UFX0zri7o13ypjuVrYIg6owM4Bc70qH4FrYo/hA9B9W0lCbw6NQAAAABJRU5ErkJggg=="></a>
+                <p id="p21">Распродажа</p>
+                <div style="display: flex;">
+                  <a href=""><img style="margin-top: 5px;width: 10px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a> 
+                 <p >5.0(41 оценка)</p>
+                
+                </div>
+                <a href="">Органайзер для ватных дисков и ватных палочек</a>
+                
+      
+                <p id="markem">5 475 сум/в месяц</p>
+                <p>34 000сум</p>
+                <del>120 000</del>
+      
+              </div>
+      
+      
+      
+              <div id="but">
+      
+                <img id="kasmetika1" src="https://images.uzum.uz/ck4k0vbk9fq8tdq5bleg/original.jpg" alt="">
+                <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAABh0lEQVR4nO2VyytEYRjGf0MRIwu3hUIsbCiXJisWQtlo8pcYK0ts7Ngou1lYyshGyrDxF0hWUyiK3IbksjKOTj1TX8c5xznOzIqn3sV5n+d93u+8fRf4R5nQpAiiawxr3gasAbeApbgCFoC4oYsrd23oboBVoPWnJsNA3ih8dHzngG5FzsjnpS1+3wFDXk1agHsJd4Aeg5sATsVdKizlxg1dr2qLf9fg1mhJgj2gwoWvAw6NVR8o54Rdm5XGHu03nIi0x+eFemBfRrU+uhF5HbmRryL9DIIiLq8XN/JdZOht6rHdLS3ec3SjRMeYvI7dyEWRmRI02pLXvBvZrPF9AtMRmkzJ483vVpk1DmrfL5r0A0/ymPETxoBNCR+ARIgmCeMW2ZCXL6qAbWPXJAM0mQSeVbMLVAddnd1sXYUfQMpHm5LGUo1dGxpzQEEmK45xxIBlcQVpIyGpE24bpoFKRdo4/UHGGwiDxruTURTfqQFKjA7g3Li9z4B2yoQu4ELRSZlRo/jj+AJBbHcLuft3iQAAAABJRU5ErkJggg=="></a>
+                <p style="background-color: rgb(229, 255, 0);width: 140px;">Распродажа</p>
+                <div style="display: flex;">
+                  <a href=""><img style="margin-top: 7px;width: 10px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a>
+                  <p>4.9
+                    ( 51 оценка )
+                    Более 600 заказов</p>
+                </div>
+                <p>Отшелушивающий тоник с гликолевой кислотой и алоэ вера The Ordinary, очищает поры, 240 мл
+                </p>
+                <p>Цена:
+                  149 000 сум
+                  </p>
+                  <del>500 000 сум</del>
+                  <p style="background-color: rgb(229, 255, 0);width: 140px;">От 18 128 сум/мес</p>
+               
+                
+                
+      
+              </div>
+              
+      
+      
+      
+            </div>
+      
+      
+      
+      
+            <div id="glavniy5">
+      
+      
+              <div id="buut">
+
+                <img id="kassmetika" src="https://mp-cosmetics.ru/pictures/product/big/12540_big.png" alt=""><a id="heartt" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAABh0lEQVR4nO2VyytEYRjGf0MRIwu3hUIsbCiXJisWQtlo8pcYK0ts7Ngou1lYyshGyrDxF0hWUyiK3IbksjKOTj1TX8c5xznOzIqn3sV5n+d93u+8fRf4R5nQpAiiawxr3gasAbeApbgCFoC4oYsrd23oboBVoPWnJsNA3ih8dHzngG5FzsjnpS1+3wFDXk1agHsJd4Aeg5sATsVdKizlxg1dr2qLf9fg1mhJgj2gwoWvAw6NVR8o54Rdm5XGHu03nIi0x+eFemBfRrU+uhF5HbmRryL9DIIiLq8XN/JdZOht6rHdLS3ec3SjRMeYvI7dyEWRmRI02pLXvBvZrPF9AtMRmkzJ483vVpk1DmrfL5r0A0/ymPETxoBNCR+ARIgmCeMW2ZCXL6qAbWPXJAM0mQSeVbMLVAddnd1sXYUfQMpHm5LGUo1dGxpzQEEmK45xxIBlcQVpIyGpE24bpoFKRdo4/UHGGwiDxruTURTfqQFKjA7g3Li9z4B2yoQu4ELRSZlRo/jj+AJBbHcLuft3iQAAAABJRU5ErkJggg=="> </a>
+                <p id="pp21">Распродажа</p>
+                <a href="">Омолаживающей эликсир крем для лица, с эффектом увлажнения "Кровь Дракона", 50 г</a>
+                <a href=""><img style="margin-top: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a> <p >5.0(41 оценка)</p>
+                <p id="psvet">5 475 сум/в месяц</p>
+                <p>36 000сум</p>
+                <del>170 000</del>
+              </div>
+      
+      
+              <div id="buut">
+      
+                <img id="kassmetika" src="https://pics.erkapharm.com/images/goods/52491/main" alt="">
+      
+      
+                <a id="heartt" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAABh0lEQVR4nO2VyytEYRjGf0MRIwu3hUIsbCiXJisWQtlo8pcYK0ts7Ngou1lYyshGyrDxF0hWUyiK3IbksjKOTj1TX8c5xznOzIqn3sV5n+d93u+8fRf4R5nQpAiiawxr3gasAbeApbgCFoC4oYsrd23oboBVoPWnJsNA3ih8dHzngG5FzsjnpS1+3wFDXk1agHsJd4Aeg5sATsVdKizlxg1dr2qLf9fg1mhJgj2gwoWvAw6NVR8o54Rdm5XGHu03nIi0x+eFemBfRrU+uhF5HbmRryL9DIIiLq8XN/JdZOht6rHdLS3ec3SjRMeYvI7dyEWRmRI02pLXvBvZrPF9AtMRmkzJ483vVpk1DmrfL5r0A0/ymPETxoBNCR+ARIgmCeMW2ZCXL6qAbWPXJAM0mQSeVbMLVAddnd1sXYUfQMpHm5LGUo1dGxpzQEEmK45xxIBlcQVpIyGpE24bpoFKRdo4/UHGGwiDxruTURTfqQFKjA7g3Li9z4B2yoQu4ELRSZlRo/jj+AJBbHcLuft3iQAAAABJRU5ErkJggg=="> </a>
+                <p id="pp21">Распродажа</p>
+                <a href="">Зубная паста Splat Professional Отбеливание Плюс, 100 мл</a>
+                <a href=""><img style="margin-top: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a> <p >5.0(41 оценка)</p>
+                <p id="psvet">5 475 сум/в месяц</p>
+                <p>38 000сум</p>
+                <del>170 000</del>
+              </div>
+              <div id="buut">
+                <img id="kassmetika" src="https://img.alicdn.com/imgextra/i3/6000000004879/O1CN01RgZln61lud0aVqiby_!!6000000004879-0-tbvideo.jpg" alt="">
+
+
+                <a id="heartt" href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAABh0lEQVR4nO2VyytEYRjGf0MRIwu3hUIsbCiXJisWQtlo8pcYK0ts7Ngou1lYyshGyrDxF0hWUyiK3IbksjKOTj1TX8c5xznOzIqn3sV5n+d93u+8fRf4R5nQpAiiawxr3gasAbeApbgCFoC4oYsrd23oboBVoPWnJsNA3ih8dHzngG5FzsjnpS1+3wFDXk1agHsJd4Aeg5sATsVdKizlxg1dr2qLf9fg1mhJgj2gwoWvAw6NVR8o54Rdm5XGHu03nIi0x+eFemBfRrU+uhF5HbmRryL9DIIiLq8XN/JdZOht6rHdLS3ec3SjRMeYvI7dyEWRmRI02pLXvBvZrPF9AtMRmkzJ483vVpk1DmrfL5r0A0/ymPETxoBNCR+ARIgmCeMW2ZCXL6qAbWPXJAM0mQSeVbMLVAddnd1sXYUfQMpHm5LGUo1dGxpzQEEmK45xxIBlcQVpIyGpE24bpoFKRdo4/UHGGwiDxruTURTfqQFKjA7g3Li9z4B2yoQu4ELRSZlRo/jj+AJBbHcLuft3iQAAAABJRU5ErkJggg=="> </a><p id="pp21">Распродажа</p>
+                <a href="">Карандаш для подводки бровей и глаз 2 в 1 с щеткой и ыдвижным грифелем</a>
+                <a href=""><img style="margin-top: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a> <p >5.0(41 оценка)</p>
+                <p id="psvet">5 475 сум/в месяц</p>
+                <p>37 000сум</p>
+                <del>170 000</del>
+              </div>
+              <div id="buut">
+                <img id="kassmetika" src="https://ke-images.servicecdn.ru/bjps7tisr16keabeijl0/original.jpg" alt="">
+      
+      
+      
+                <a id="heartt" href=""><img style="margin-top: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAABh0lEQVR4nO2VyytEYRjGf0MRIwu3hUIsbCiXJisWQtlo8pcYK0ts7Ngou1lYyshGyrDxF0hWUyiK3IbksjKOTj1TX8c5xznOzIqn3sV5n+d93u+8fRf4R5nQpAiiawxr3gasAbeApbgCFoC4oYsrd23oboBVoPWnJsNA3ih8dHzngG5FzsjnpS1+3wFDXk1agHsJd4Aeg5sATsVdKizlxg1dr2qLf9fg1mhJgj2gwoWvAw6NVR8o54Rdm5XGHu03nIi0x+eFemBfRrU+uhF5HbmRryL9DIIiLq8XN/JdZOht6rHdLS3ec3SjRMeYvI7dyEWRmRI02pLXvBvZrPF9AtMRmkzJ483vVpk1DmrfL5r0A0/ymPETxoBNCR+ARIgmCeMW2ZCXL6qAbWPXJAM0mQSeVbMLVAddnd1sXYUfQMpHm5LGUo1dGxpzQEEmK45xxIBlcQVpIyGpE24bpoFKRdo4/UHGGwiDxruTURTfqQFKjA7g3Li9z4B2yoQu4ELRSZlRo/jj+AJBbHcLuft3iQAAAABJRU5ErkJggg=="> </a>
+      
+                <p id="pp21">Распродажа</p>
+                <a href="">Косметический набор для очищения прыщей-акне и черных точек, 4 шт</a>
+                <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a> <p >5.0(41 оценка)</p>
+                <p id="psvet">5 475 сум/в месяц</p>
+                <p>40 000сум</p>
+                <del>150 000</del>
+              </div>
+      
+      
+            </div>
+      
+      
+      
+      
+      
+      
+            <div id="glavniy6">
+      
+      
+              <div id="buutt1">
+
+
+                <img id="vid" src="https://images.uzum.uz/ci60calenntd8rfbjr30/original.jpg" alt=""><a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABXUlEQVR4nO2UTyuEURTGf5qFxMZGJEmxkGGFKFZCsuUjsPEF7NU0+QLMhK2yUmzFR7CxYqNBNjb+Z8ro1DN143i9875jxVOnbu/znOfc995zD/wjAXqAAlACysAVsAX0Bpo+YFtcWdpN5UZiFngAKk68AUvAstae5h6Yidp51fwAGAGagaz+yL6/K2xdBAalMe1hUKTbK1AIzD2sBAVs7aFaZMMjSyKHI45wVfEdRuVx6ZGvIu2Xk6JFHi8eeSFyIEWBrDzOPXJHZC5Fgbw8rK2/YEykdVJnAvMu4FFNYHfhYk9FjoBMDeamPVbubpSwDbiR0F5mHDToTVjOLdD+U8Ik8KyEtRgFctJazkSsLQHTQdvmtUtv5+vBGJmnRiwGM6f46U4ywbGYZoGEmArm0z7QBDQGzfAEzJES48CdDE8UFX0zri7o13ypjuVrYIg6owM4Bc70qH4FrYo/hA9B9W0lCbw6NQAAAABJRU5ErkJggg=="></a>
+                <p style="display: flex;background-color: rgb(229, 255, 0);width: 100px;">Распродажа</p>
+                <div id="kakosss">
+                  <div style="display: flex;">
+                    <a href=""><img style="margin-top: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a>
+                    <p>4.9
+                      ( 116 оценок )
+                      Более 1500 заказов</p>
+                  </div>
+                  <p>База под макияж TUZ, праймер основа для лица</p>
+                  <p>Цена:
+                    29 000 сум</p>
+                    <del>78 000 сум</del>
+                    <p style="background-color: rgb(229, 255, 0);width: 140px;">От 3 528 сум/мес</p>
+                  
+                </div>
+                
+      
+                <a href=""></a>
+      
+      
+              </div>
+      
+      
+              <div id="buutt1">
+                <img id="vid" src="https://images.uzum.uz/ceo0n5ov1htd23ak63ng/original.jpg" alt="">
+      
+      
+                <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABXUlEQVR4nO2UTyuEURTGf5qFxMZGJEmxkGGFKFZCsuUjsPEF7NU0+QLMhK2yUmzFR7CxYqNBNjb+Z8ro1DN143i9875jxVOnbu/znOfc995zD/wjAXqAAlACysAVsAX0Bpo+YFtcWdpN5UZiFngAKk68AUvAstae5h6Yidp51fwAGAGagaz+yL6/K2xdBAalMe1hUKTbK1AIzD2sBAVs7aFaZMMjSyKHI45wVfEdRuVx6ZGvIu2Xk6JFHi8eeSFyIEWBrDzOPXJHZC5Fgbw8rK2/YEykdVJnAvMu4FFNYHfhYk9FjoBMDeamPVbubpSwDbiR0F5mHDToTVjOLdD+U8Ik8KyEtRgFctJazkSsLQHTQdvmtUtv5+vBGJmnRiwGM6f46U4ywbGYZoGEmArm0z7QBDQGzfAEzJES48CdDE8UFX0zri7o13ypjuVrYIg6owM4Bc70qH4FrYo/hA9B9W0lCbw6NQAAAABJRU5ErkJggg=="></a>
+                <p style="display: flex;background-color: rgb(229, 255, 0);width: 100px;">Распродажа</p>
+                <p>Зубные щётки бамбуковые, в наборе 4 шт</p>
+                <div id="kakos">
+                  <div style="display: flex;">
+                    <a href=""><img style="margin-top: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a>
+                    <p>4.9( 226 оценок )
+                      Более 4000 заказов</p>
+                     
+                      
+                  </div>
+                   <p>Зубные щётки бамбуковые, в наборе 4 шт</p>
+                   <p>Цена:
+                    19 000 сум
+                    </p>
+                    <del>60 000 сум</del>
+                    <p style="background-color: rgb(229, 255, 0);width: 140px;">От 2 311 сум/мес</p>
+                  
+      
+                  <a href=""></a>
+
+
+                </div>
+                
+      
+      
+              </div>
+      
+      
+              <div id="buutt1">
+      
+      
+                <img id="vid" src="https://images.uzum.uz/clgt18d6sfhvbd1iuqe0/original.jpg" alt=""><a  href=""><img style="margin-top: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABXUlEQVR4nO2UTyuEURTGf5qFxMZGJEmxkGGFKFZCsuUjsPEF7NU0+QLMhK2yUmzFR7CxYqNBNjb+Z8ro1DN143i9875jxVOnbu/znOfc995zD/wjAXqAAlACysAVsAX0Bpo+YFtcWdpN5UZiFngAKk68AUvAstae5h6Yidp51fwAGAGagaz+yL6/K2xdBAalMe1hUKTbK1AIzD2sBAVs7aFaZMMjSyKHI45wVfEdRuVx6ZGvIu2Xk6JFHi8eeSFyIEWBrDzOPXJHZC5Fgbw8rK2/YEykdVJnAvMu4FFNYHfhYk9FjoBMDeamPVbubpSwDbiR0F5mHDToTVjOLdD+U8Ik8KyEtRgFctJazkSsLQHTQdvmtUtv5+vBGJmnRiwGM6f46U4ywbGYZoGEmArm0z7QBDQGzfAEzJES48CdDE8UFX0zri7o13ypjuVrYIg6owM4Bc70qH4FrYo/hA9B9W0lCbw6NQAAAABJRU5ErkJggg=="></a>
+  
+  
+                <p style="display: flex;background-color: rgb(229, 255, 0);width: 100px;">Распродажа</p>
+      
+                
+      
+                <div id="kakos">
+      
+      
+                  <div style="display: flex;">
+      
+                  <a href=""><img style="margin-top: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a>
+                  <p>0.0
+                    Оценок пока нет
+                    9 заказов</p>
+                  </div>
+      
+                  <p>Шампунь и Кондиционер-бальзам, ароматный, Kerasys, 600 мл, Корея</p>
+      
+                  <p>Цена:
+                    143 000 сум</p>
+      
+                    <del>318 000</del>
+      
+                    <p>Новинка</p>
+      
+                    <p style="background-color: rgb(229, 255, 0);width: 140px;">От 17 398 сум/мес </p>
+      
+                  
+      
+                <a href=""></a>
+                </div>
+      
+      
+              </div>
+      
+      
+      
+      
+              <div id="buutt1">
+                <img id="vid" src="https://images.uzum.uz/cl68bq5ennt861ip10m0/original.jpg" alt="">
+                
+                
+                <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABXUlEQVR4nO2UTyuEURTGf5qFxMZGJEmxkGGFKFZCsuUjsPEF7NU0+QLMhK2yUmzFR7CxYqNBNjb+Z8ro1DN143i9875jxVOnbu/znOfc995zD/wjAXqAAlACysAVsAX0Bpo+YFtcWdpN5UZiFngAKk68AUvAstae5h6Yidp51fwAGAGagaz+yL6/K2xdBAalMe1hUKTbK1AIzD2sBAVs7aFaZMMjSyKHI45wVfEdRuVx6ZGvIu2Xk6JFHi8eeSFyIEWBrDzOPXJHZC5Fgbw8rK2/YEykdVJnAvMu4FFNYHfhYk9FjoBMDeamPVbubpSwDbiR0F5mHDToTVjOLdD+U8Ik8KyEtRgFctJazkSsLQHTQdvmtUtv5+vBGJmnRiwGM6f46U4ywbGYZoGEmArm0z7QBDQGzfAEzJES48CdDE8UFX0zri7o13ypjuVrYIg6owM4Bc70qH4FrYo/hA9B9W0lCbw6NQAAAABJRU5ErkJggg=="></a>
+                <p style="display: flex;background-color: rgb(229, 255, 0);width: 100px;">Распродажа</p>
+      
+                <div style="display: flex;">
+                  <a href=""><img style="margin-top: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a>
+                  <p>4.9
+                  ( 16 оценок )
+                  Более 200 заказов</p>
+                </div>
+      
+                <p>Подарочный набор Чистая линия, ежедневный уход, лосьон-тоник 100 мл + крем-бустер 45 мл</p>
+
+
+                <p>Цена: 49 000   <del>650 000 сум</del></p>
+      
+                <p style=" background-color: rgb(229, 255, 0);width: 140px;">5 961 сум/месяц</p>
+                
+      
+      
+                <a href=""></a>
+      
+      
+              </div>
+      
+      
+            </div>
+      
+            <div id="krasota">
+      
+      
+              <div id="moda"><img id="razmer" src="https://images.uzum.uz/ck6hm4sjvf2qh44ho1b0/original.jpg" alt="">
+                  <p style="background-color: rgb(229, 255, 0);width: 140px;">Распродажа</p>
+                  <div style="display: flex;">
+                    <a href=""><img style="margin-top: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a>
+                    <p>4.9
+                      ( 19 оценок )
+                      Более 300 заказов</p>
+                  </div>
+                  <p>Бальзам для губ, увлажняющая, помада, розовый, водостойкий</p>
+                  <p>Цена:
+                    29 000 сум</p>
+                    <del>90 000</del>
+                    <p style="background-color: rgb(229, 255, 0);width: 140px;">От 3 528 сум/мес</p>
+        
+                  
+                </div>
+                <div id="moda">
+        
+                  <img id="razmer" src="https://images.uzum.uz/cglu6sfhj8j9g69buj50/original.jpg" alt="">
+                  <p style="background-color: rgb(229, 255, 0);width: 140px;">Распродажа</p>
+                  <div style="display: flex;">
+                    <a href=""><img style="margin-top: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a>
+                    <p>4.8
+                      ( 236 оценок )
+                      Более 3000 заказов</p>
+                  </div>
+                  <p>Пенка для умывания лица Nayral Rerubck с алоэ и массажной щеткой, очищающая, 150 мл</p>
+                  <p>Цена:
+                    15 000 сум</p>
+                    <del>50 000 сум</del>
+                    <p style="background-color: rgb(229, 255, 0);width: 140px;">От 1 825 сум/мес</p>
+        
+                  
+                </div>
+                <div id="moda"><img id="razmer" src="https://images.uzum.uz/clhdcpdennt1kt4dpncg/original.jpg" alt="">
+                  <p style="background-color: rgb(229, 255, 0);width: 140px;">Распродажа</p>
+                  <div style="display: flex;">
+                    <a href=""><img style="margin-top: 5px;width: 10px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a>
+                    <p>5.0
+                      ( 13 оценок )
+                      Более 40 заказов</p>
+                  </div>
+                  <p>Парфюмерная вода для мужчин Egoiste, парфюм подарочный, 100 мл</p>
+                  <p>Цена:
+                    159 000 сум
+                    </p>
+
+
+                    <del>600 000 сум</del>
+                    <p style="background-color: rgb(229, 255, 0);width: 140px;">От 19 345 сум/мес</p>
+                  
+                </div>
+                
+                  <div id="moda">
+                    
+                   <img id="razmer" src="https://images.uzum.uz/chsng236edfostig2ei0/original.jpg" alt="">
+                   <p style="background-color: rgb(229, 255, 0);width: 140px;">Распродажа</p>
+                    <div style="display: flex;justify-content: center;">
+                      <a href=""><img style="margin-top: 5px;width: 10px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a>
+                      <p>4.9
+                        ( 23 оценки )
+                        Более 200 заказов</p>
+                    </div>
+                    <p>Сыворотка для лица увлажняющая питательная с гиалуроновой кислотой, ниацинамидом и авокадо</p>
+                    <p>Цена:
+                      23 000 сум</p>
+                      <del>100 000 сум</del>
+                      <p style="background-color: rgb(229, 255, 0);width: 130px;">От 2 798 сум/мес</p>
+        
+        
+        
+                  </div>
+        
+                  
+        
+                  
+                </div>
+        
+        
+              </div>
+        
+        
+              <div id="kuubb">
+                <div id="krasotaa">
+        
+                  <div id="kub">
+          
+          
+                    <img id="raxz" src="https://images.uzum.uz/clm9r55enntcj8aa5iq0/original.jpg" alt="">
+          
+                    <p style="background-color: rgb(229, 255, 0);width: 100px;">Распродажа</p>
+          
+                    <div style="display: flex;justify-content: center;">
+          
+                      <a href=""><img style="margin-top: 5px;width: 10px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a>
+          
+                      <p>0.0
+                        Оценок пока нет
+                        Нет заказов</p>
+                      
+                    </div>
+                    <p>Подарочный набор Compliment New Boss Gentleman (Шампунь для волос и бороды + Гель для душа)</p>
+                    <p>Цена:
+                      99 000 сум
+                      </p>
+                    <del>300 000 сум</del>
+                    <p style="background-color: rgb(229, 255, 0);width: 140px;">От 12 045 сум/мес</p>
+                  </div>
+          
+                  <div id="kub">
+          
+          
+                    <img id="raxz" src="https://images.uzum.uz/clgt18d6sfhvbd1iuqe0/original.jpg" alt="">
+          
+                    <p style="background-color: rgb(229, 255, 0);width: 100px;">Распродажа</p>
+
+
+                    <div style="display: flex;justify-content: center;"><a href=""><img style="margin-top: 5px;width: 10px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a>
+    
+                        <p>0.0
+                          Оценок пока нет
+                          Более 20 заказов</p>
+                        
+                      </div>
+                      <p>Шампунь и Кондиционер-бальзам, ароматный, Kerasys, 600 мл, Корея</p>
+                      <p>Цена:
+                        143 000 сум</p>
+                      <del>318 000 сум
+                      </del>
+                      <p style="background-color: rgb(229, 255, 0);width: 140px;">От 17 398 сум/мес</p>
+                    </div>
+            
+                    <div id="kub">
+            
+            
+                      <img id="raxz" src="https://images.uzum.uz/cl8en95ennt861ipdj7g/original.jpg" alt="">
+            
+                      <p style="background-color: rgb(229, 255, 0);width: 100px;">Распродажа</p>
+            
+                      <div style="display: flex;justify-content: center;">
+            
+                        <a href=""><img style="margin-top: 5px;width: 10px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a>
+            
+                        <p>5.0
+                          ( 2 оценки )
+                          Более 90 заказов</p>
+                        
+                      </div>
+                      <p>Набор спонжей для лица, в наборе 4 шт, с держателем</p>
+                      <p>Цена:
+                        37 000 сум</p>
+                      <del>150 000 сум</del>
+                      <p style="background-color: rgb(229, 255, 0);width: 140px;">От 4 501 сум/мес</p>
+                    </div>
+            
+                    <div id="kub">
+            
+                      
+                      <img id="raxz" src="https://images.uzum.uz/clpj6fd6sfhsc0unqlog/original.jpg" alt="">
+            
+                      <p style="background-color: rgb(229, 255, 0);width: 100px;">Распродажа</p>
+            
+                      <div style="display: flex;justify-content: center;">
+            
+                        <a href=""><img style="margin-top: 5px;width: 10px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a>
+            
+                        <p>0.0
+                          Оценок пока нет
+                          1 заказ</p>
+                        
+                      </div>
+                      <p>Подарки и наборы косметики для женщин на Новый год и другие праздники</p>
+                      <p>Цена:
+                        149 000 сум</p>
+                      <del>350 000 сум</del>
+                      <p style="background-color: rgb(229, 255, 0);width: 140px;">От 18 128 сум/мес</p>
+                    </div>
+
+
+                  </div>
+            
+            
+            
+                  <div id="krasotaav">
+                    <div id="kuba">
+                      <img id="raxn" src="https://images.uzum.uz/cdkuk8j5a95unf13l040/original.jpg" alt="">
+                      <p style="background-color: rgb(229, 255, 0);width: 100px;">Распродажа</p>
+                      <div style="display: flex;">
+                        <a href=""><img style="margin-top: 5px;width: 10px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a>
+            
+                        <p>4.8
+                            ( 24 оценки )
+                            Более 500 заказов</p>
+            
+                      </div>
+                      <p>Туалетное мыло IVY Creamy Paperless Wrap, 115 г</p>
+            
+                      <p>Цена:
+                        4 000 сум</p>
+            
+                      <del>7 000 сум</del>
+                      <p style="background-color: rgb(229, 255, 0);width: 140px;">От 486 сум/мес</p>
+                    </div>
+            
+            
+                    <div id="kuba">
+                      <img id="raxn" src="https://images.uzum.uz/cdfv45r5a95unf13d1i0/original.jpg" alt="">
+                      <p style="background-color: rgb(229, 255, 0);width: 100px;">Распродажа</p>
+                      <div style="display: flex;">
+                        <a href=""><img style="margin-top: 5px;width: 10px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a>
+            
+                        <p>0.0
+                            Оценок пока нет
+                            Более 30 заказов</p>
+            
+                      </div>
+                      <p>Скраб для лица Garnier Абрикос, 50 мл</p>
+            
+                      <p>Цена:
+                        43 000 сум</p>
+            
+                      <del>105 000 сум</del>
+                      <p style="background-color: rgb(229, 255, 0);width: 140px;">От 5 231 сум/мес</p>
+                    </div>
+                    
+                    <div id="kuba">
+                        <img id="raxn" src="https://images.uzum.uz/cdln4pgl08kcldtnk0fg/original.jpg" alt="">
+                        <p style="background-color: rgb(229, 255, 0);width: 100px;">Распродажа</p>
+                        <div style="display: flex;">
+                          <a href=""><img style="margin-top: 5px;width: 10px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a>
+              
+                          <p>5.0
+                            ( 5 оценок )
+                            Более 400 заказов</p>
+              
+                        </div>
+                        <p>Туалетное мыло IVY Floral Paperless Wrap, 115 г</p>
+              
+                        <p>Цена:
+                            4 000 сум</p>
+
+
+                          <del>7 000 сум</del>
+                        <p style="background-color: rgb(229, 255, 0);width: 140px;">От 486 сум/мес</p>
+                      </div>
+              
+              
+                      <div id="kuba">
+                        <img id="raxn" src="https://images.uzum.uz/clmqdntenntcj8aa807g/original.jpg" alt="">
+                        <p style="background-color: rgb(229, 255, 0);width: 100px;">Распродажа</p>
+                        <div style="display: flex;">
+                          <a href=""><img style="margin-top: 5px;width: 10px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABBUlEQVR4nGNgwAH+r9Ji+79UbxkYr9JiYyAV/F+u6/l/md5/KPYg3YBlunOQDJhNmuZVocz/l+q+Qhig+/r/fnsWEmzXc0KyHYKX6DviUlyMoZhYvFSviOH/Ur1tFBiwjeH/Ij0xsgxZqrv3/zJDKYg3/jMw/l+qm/9/qd5PIjT+/r9Ut+F/PQMTZngs1Tf7v1T3Dx7Nf0BqcIf+YgNTws7XMcEXfR2EDdBtx2OA7i20UD4NxqgG3MKueYW2PpLGf/+X6k4EZ6j99izgQFum9xfJG3qYBizXV/i/VPfc/6V6L/4v1XPHDGA9d4ic7jmQWuyu2KbC/n+VgShOL64yEAWpQRYEAGTZhvx5VyUTAAAAAElFTkSuQmCC"></a>
+              
+                          <p>5.0
+                            ( 1 оценка )
+                            Более 20 заказов</p>
+              
+                        </div>
+                        <p>Подарочный набор Tesori d'Oriente</p>
+              
+                        <p>Цена:
+                            155 000 сум
+                            </p>
+              
+                        <del>180 000 сум</del>
+                        <p style="background-color: rgb(229, 255, 0);width: 140px;">От 21 170 сум/мес</p>
+                      </div>
+              
+                      
+                    </div>
+    
+                    
+              </div>
+        
+          </div>  
+        
+              
+
+
+          <html data-theme="cupcake"></html>
+          </div>
+
+
+
+          
+  
+        </div>
+ 
+
+          
+             
+          
+               
+              
+          </body>
+          </html>
